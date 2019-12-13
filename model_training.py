@@ -26,7 +26,8 @@ learning_rate=0.001
 
 ########################### Loading FER-2013 Dataset ########################
 def load_fer2013(display_sample):
-        data = pd.read_csv('D:\\Mine\\FER_Workshop\\cnn_model\\cnn_model\\fer2013.csv')
+        ######### download the dataset from: https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data
+        data = pd.read_csv('\\fer2013.csv')
         pixels = data['pixels'].tolist()
         width, height = 48, 48
         faces = []
